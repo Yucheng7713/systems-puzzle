@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<body>
+		<h2>Item post success !</h2>
+		<form method="GET" action="/"><input type="submit" value="Go back"></form>
+		<table>
+			<tr>
+				<th>Name</th>
+				<th>Quantity</th>
+				<th>Description</th>
+				<th>Time ( UTC )</th>
+			</tr>
+			{% for item in results %}
+			<tr>
+				<td>{{ item.name }}</td>
+				<td>{{ item.quantity }}</td>
+				<td>{{ item.description}}</td>
+				<td>{{ item.date_added.strftime("%Y-%m-%d %H:%M:%S") }}</td>
+			</tr>
+			{% endfor %}
+		</table>
+	</body>
+</html>

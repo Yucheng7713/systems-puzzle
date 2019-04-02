@@ -34,6 +34,16 @@ At that point, the web application should be visible by going to `localhost:8080
 
 Once you've corrected the bugs and have the basic features working, commit the functional codebase to a new repo following the instructions below. As you debug the system, you should keep track of your thought process and what steps you took to solve the puzzle.
 
+## Used tools
+* Docker - Docker is a platform for developers and sysadmins to develop, deploy, and run applications with containers.
+* Docker Compose - A orchestration tool for defining and running multi-container Docker applications.
+* Postgres - an object-relational database system used as the backend database in this project.
+* Flask - a Python microframework which holds the app.
+* Flask-WTF - Intergration of Flask and WTForms.
+* SQLAlchemy - An object relational mapper for associating user-defined Python classes with database tables
+* psycopg2 - Postgres adapter for Python.
+* nginx - used as the web server. (act as the reverse proxy.) 
+
 ## Instructions to submit your solution
 * Don't schedule your interview until you've worked on the puzzle 
 * To submit your entry please use the link you received in your systems puzzle invitation

@@ -1,0 +1,67 @@
+
+## Fundemental Docker command lines
+
+# List Docker CLI commands
+docker
+docker container --help
+
+# Display Docker version and info
+docker --version
+docker version
+docker info
+
+# Build an image
+docker build
+
+# Create a container from an image and run it
+docker run
+docker run hello-world
+
+# Shows the log from a container
+docker logs
+
+# Shows the running containers
+docker ps
+
+# List Docker images
+docker image ls
+
+# List Docker containers (running, all, all in quiet mode)
+docker container ls
+docker container ls --all
+docker container ls -aq
+
+
+
+## Docker Compose command line
+
+# Build and run your app which includes all the containers
+docker-compose up
+
+# Build and run your app in background
+docker-compose up -d
+
+# Rebuild your images
+docker-compose build
+
+# Monitor currently running containers in background
+docker-compose ps
+
+# Run one-off commands for your services
+docker-compose run
+
+# Stop all containers (services) when using "docker-compose up -d"
+docker-compose stop
+
+# Stop everything and remove containers
+docker-compose down --volumes
+
+
+## Docker Hub - for publishing docker image
+
+# Push the image to the repository
+docker push
+
+# Pull an image from the repository
+docker pull
+
